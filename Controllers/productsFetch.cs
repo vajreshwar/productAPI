@@ -20,8 +20,7 @@ namespace productAPI.Controllers
         }
 
         [HttpGet]
-
-        public async List<Offer> Get()
+        public List<Offer> Get()
         {
             this.offerService.GetTodaysOffers();
         }
