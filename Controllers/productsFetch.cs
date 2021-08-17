@@ -22,7 +22,7 @@ namespace productAPI.Controllers
         [HttpGet]
         public List<Offer> Get()
         {
-            this.offerService.GetTodaysOffers();
+           return this.offerService.GetTodaysOffers();
         }
 
     }
