@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace productAPI.service
 {
-    public class OfferService
+    public class OfferService :IOfferService
     {
         public OfferService()
         {
@@ -47,5 +47,12 @@ namespace productAPI.service
 
             return offers;
         }
+    }
+
+    public interface IOfferService
+    {
+        public List<Product> GetAllProducts();
+        public List<Offer> GetTodaysOffers();
+
     }
 }
